@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "lib": ["ESNext"],
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "target": "esnext",
+    "outDir": "lib",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "src/*": ["src/*"],
+      "lambdas/*": ["lambdas/*"]
+    },
+    "types": [
+      "jest"
+    ]
+  },
+  "include": ["lambdas/**/*","src/**/*"],
+  "exclude": [
+    "node_modules/**/*",
+    ".serverless/**/*",
+    ".webpack/**/*",
+    "_warmup/**/*",
+    ".vscode/**/*"
+  ],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs"
+    },
+    "require": ["tsconfig-paths/register"]
+  }
+}
