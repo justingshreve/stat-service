@@ -130,7 +130,7 @@ stepFunctions:
                   - Ref: 'AWS::Region'
                   - Ref: 'AWS::AccountId'
                   - function:${self:provider.stage}-${self:service}-get-players
-            TimeoutSeconds: 30
+            TimeoutSeconds: 10
             Retry:
               - ErrorEquals:
                 - States.ALL
@@ -154,7 +154,7 @@ stepFunctions:
                         - Ref: 'AWS::Region'
                         - Ref: 'AWS::AccountId'
                         - function:${self:provider.stage}-${self:service}-add-stats
-                  TimeoutSeconds: 30
+                  TimeoutSeconds: 10
                   Retry:
                     - ErrorEquals:
                       - States.ALL
