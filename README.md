@@ -1,6 +1,6 @@
 # Stat Service
 
-This is a demo project that was used in the June 2022 Serverless Microservice Meetup. It is a sample microservice that uses Lambdas and Step Functions to create a team feed or final output. This project is dependent on the player-service, which needs to be deployed first. It uses cloudformation variables to discover the player-service endpoints.
+This is a demo project that was used in the [June 2022 Serverless Microservice Meetup](https://www.meetup.com/serverless-at-scale-irl/events/285802061/). It is a sample microservice that uses Lambdas and Step Functions to create a team feed or final output. This project is dependent on the player-service, which needs to be deployed first. It uses cloudformation variables to discover the player-service endpoints.
 
 <img width="779" alt="Screen Shot 2022-06-10 at 11 53 47 AM" src="https://user-images.githubusercontent.com/885096/173104460-01ef69cc-c7ef-40d6-966d-267341077dad.png">
 
